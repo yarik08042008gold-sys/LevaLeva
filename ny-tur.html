@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LevaLeva - Lag ny tur</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="bilder/logo.png" alt="LevaLeva logo">
+    <nav>
+      <a href="index.html">Forside</a>
+      <a href="turer.html">Trimturer</a>
+      <a href="ny-tur.html">Lag ny tur</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Lag ny tur</h1>
+    <p>Denne siden er for ansatte. Dette er bare en demo, uten ekte innlogging.</p>
+
+    <form class="ny-tur-form">
+      <label>Navn på tur
+        <input type="text" class="tur-navn" required>
+      </label>
+
+      <label>Dato
+        <input type="date" class="dato" required>
+      </label>
+
+      <label>Klokkeslett
+        <input type="time" class="klokke" required>
+      </label>
+
+      <label>Turleder
+        <input type="text" class="turleder" required>
+      </label>
+
+      <label>Antall plasser
+        <input type="number" class="plasser" min="1" value="12" required>
+      </label>
+
+      <label>Oppmøtested
+        <input type="text" class="start" required>
+      </label>
+
+      <label>Hvor går turen?
+        <input type="text" class="rute" required>
+      </label>
+
+      <label>Varighet
+        <input type="text" class="varighet" placeholder="For eksempel 1 time" required>
+      </label>
+
+      <label>Ekstra informasjon
+        <textarea class="ekstra" rows="3" placeholder="For eksempel fruktpause"></textarea>
+      </label>
+
+      <button class="knapp" type="submit">Lagre tur</button>
+      <p class="lagret-melding"></p>
+    </form>
+  </main>
+
+  <footer>LevaLeva - Levanger</footer>
+</body>
+</html>

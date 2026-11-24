@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LevaLeva - Trimturer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="bilder/logo.png" alt="LevaLeva logo">
+    <nav>
+      <a href="index.html">Forside</a>
+      <a href="turer.html">Trimturer</a>
+      <a href="ny-tur.html">Lag ny tur</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Trimturer</h1>
+    <p>Her ser du turene denne uka og neste uke. Trykk på en tur for mer informasjon.</p>
+    <p class="beskjed">NB! Turene kan bli endret.</p>
+
+    <div class="kalender-knapper">
+      <button class="forrige">Forrige uke</button>
+      <button class="tilbake">Denne uka</button>
+      <button class="neste">Neste uke</button>
+    </div>
+
+    <div class="kalender"></div>
+    <p>Du kan bare se antall ledige plasser, ikke hvem som er påmeldt.</p>
+  </main>
+
+  <dialog class="tur-modal">
+    <h2 class="modal-tittel"></h2>
+    <p class="modal-info"></p>
+    <p class="vaer-info"></p>
+    <button class="paamelding knapp">Meld meg på</button>
+    <p class="paamelding-info"></p>
+    <button class="lukk">Lukk</button>
+  </dialog>
+
+  <footer>LevaLeva - Levanger</footer>
+</body>
+</html>
